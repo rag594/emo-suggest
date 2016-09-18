@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+
+  "name": "emosuggest",
+  "description": "Suggests an emoji",
+  "version": "1.0",
+
+  "background": {
+    "scripts": [
+      "background.js" 
+    ],
+    "persistent": true
+  },
+// "content_scripts": [{
+//     "matches": ["https://*/*"],
+//     "js": ["content_script.js"],
+//     "run_at": "document_end"
+//   }],
+
+  "browser_action": {
+    //"default_popup": "popup.html"
+    "default_title": "inject",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "<all_urls>"
+  ]
+}
